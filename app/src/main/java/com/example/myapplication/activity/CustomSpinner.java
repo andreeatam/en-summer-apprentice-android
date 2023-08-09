@@ -10,7 +10,6 @@ public class CustomSpinner extends androidx.appcompat.widget.AppCompatSpinner {
         super(context);
         init();
     }
-
     public CustomSpinner(Context context, AttributeSet attrs) {
         super(context, attrs);
         init();
