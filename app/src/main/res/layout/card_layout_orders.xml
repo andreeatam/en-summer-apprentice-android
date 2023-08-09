@@ -1,0 +1,112 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginBottom="16dp"
+    app:cardCornerRadius="0dp"
+    app:cardElevation="4dp">
+
+    <!-- Card content -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="#A4EA54">
+
+        <!-- Title - Event Name -->
+        <TextView
+            android:id="@+id/eventTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Event Name"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="32dp"/>
+
+
+        <!-- Display the total number of tickets -->
+        <TextView
+            android:id="@+id/totalTicketsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="Total Number of Tickets:"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_marginTop="32dp" />
+
+        <!-- Total Number of Tickets EditText -->
+        <EditText
+            android:id="@+id/totalTicketsEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/totalTicketsText"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@id/totalTicketsText"
+            android:hint="Enter total number of tickets"
+            android:inputType="number"
+            android:minHeight="48dp" />
+
+        <!-- Display the total price -->
+        <TextView
+            android:id="@+id/totalPriceText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/totalTicketsEditText"
+            android:text="Total Price:"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_marginTop="16dp" />
+
+        <!-- Total Price EditText -->
+        <EditText
+            android:id="@+id/totalPriceEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/totalPriceText"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@id/totalPriceText"
+            android:hint="Enter total price"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp" />
+
+        <!-- Ordered At EditText -->
+        <EditText
+            android:id="@+id/orderedAtEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/totalPriceEditText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:hint="Ordered At"
+            android:minHeight="48dp" />
+
+        <!-- Custom Spinner -->
+        <com.example.myapplication.activity.CustomSpinner
+            android:id="@+id/orderSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/orderedAtEditText"
+            android:layout_marginTop="14dp"
+            android:minHeight="48dp" />
+
+        <!-- Delete Order Button -->
+        <Button
+            android:id="@+id/deleteOrderButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/orderSpinner"
+            android:layout_centerHorizontal="true"
+            android:text="Sterge comanda"
+            android:textColor="#6DE153"
+            android:backgroundTint="#3F51B5"/>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

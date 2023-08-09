@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="409dp"
+        android:layout_height="32dp"
+        android:background="#5076A4"
+        android:elevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Search Icon -->
+        <ImageView
+            android:id="@+id/searchIcon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:contentDescription="Search Icon"
+            android:src="@drawable/search_icon" />
+
+        <!-- Filter Icon -->
+        <ImageView
+            android:id="@+id/filterIcon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:contentDescription="Filter Icon"
+            android:src="@drawable/filter_icon"
+            app:layout_constraintStart_toEndOf="@id/searchIcon" />
+
+        <!-- Navigation Arrow Icon -->
+        <ImageView
+            android:id="@+id/navigationArrowIcon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:contentDescription="Navigation Arrow Icon"
+            android:src="@drawable/left_arrow_icon"
+            app:layout_constraintStart_toEndOf="@id/filterIcon" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Other content of your activity can be added below the toolbar -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,56 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#9CFFC1"> <!-- Set the background color to a darker pale violet -->
+
+        <TextView
+            android:id="@+id/eventName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Event Name"
+            android:background="#9DE8FF" /> <!-- Set the background color to match the parent -->
+
+        <TextView
+            android:id="@+id/eventDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#9DE8FF"
+            android:text="Event Description"
+            android:textColor="#263238"
+            android:textSize="16sp" /> <!-- Set the background color to match the parent -->
+
+        <TextView
+            android:id="@+id/eventStartDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#9DE8FF"
+            android:text="Start Date"
+            android:textColor="#263238"
+            android:textSize="14sp" /> <!-- Set the background color to match the parent -->
+
+        <TextView
+            android:id="@+id/eventEndDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#9DE8FF"
+            android:text="End Date"
+            android:textColor="#263238"
+            android:textSize="14sp" /> <!-- Set the background color to match the parent -->
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
